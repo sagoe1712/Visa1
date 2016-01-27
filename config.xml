@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.visa.loyalty"
+        version   = "1.0.0">
+
+    <name>Visa loyalty</name>
+
+    <description>
+        Visa loyalty is a lifestyle app that connects you to partners around the world offering you discounts and gift
+    </description>
+
+    <author href="http://www.visa.com.ng/" email="info@visa.com.ng">
+        Visa Nigeria
+    </author>
+	
+	<feature name="http://api.phonegap.com/1.0/device" />
+
+   <preference name="phonegap-version" value="3.7.0"/>
+   <preference name="stay-in-webview" value="false"/>
+   <preference name="orientation" value="portrait"/>      
+   <preference name="target-device" value="universal"/>     
+   
+   
+
+    <!-- Plugins -->
+
+    <!-- Core plugins -->
+    
+    
+    <!--<gap:plugin name="org.apache.cordova.dialogs" source="npm" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" /> -->
+    <gap:plugin name="org.apache.cordova.splashscreen" source="pgb" />
+ 
+    
+    <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="pgb" version="0.8.1" />
+    <gap:plugin name="org.apache.cordova.network-information" source="pgb" version="0.2.15" />
+
+   
+    <!--
+        <gap:plugin name="com.phonegap.plugins.barcodescanner" />
+    -->
+
+    <!-- Define app icon for each platform. -->
+    <icon src="zlogo.png" />
+    
+
+    <!-- Define app splash screen for each platform. -->
+	
+    <gap:splash src="zlogo.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="zlogo.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="zlogo.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="zlogo.png" gap:platform="android" gap:density="xhdpi" />
+    <!-- <gap:splash src="normal.jpg"         gap:platform="blackberry" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait.png"    gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="res/screen/ios/screen-ipad-portrait.png"      gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
+
+    <gap:splash src="normal.jpg"     gap:platform="ios"     width="750" height="1334" />
+    <gap:splash src="normal.jpg"     gap:platform="ios"     width="1242" height="2208" />
+    <gap:splash src="xlarge.jpg"     gap:platform="ios"     width="2208" height="1242" />
+
+    <gap:splash src="large.jpg" gap:platform="winphone" /> -->
+	
+	
+
+  
+
+    <access origin="*"/>
+
+	<access origin="127.0.0.1*"/>
+	
+   
+
+
+</widget>
