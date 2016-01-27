@@ -1,0 +1,320 @@
+@charset "utf-8";
+#header
+{
+	background-color:#009;
+	background:#009;
+	color:#fff;
+	height:8%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'source-sans-pro', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+.demo_wrapper {
+	width: 100%;
+	margin: 0px auto 70px;
+}
+
+.message-text {
+  padding-bottom: 3px;
+  color: #a3a3a3;
+  font-size: 11px;
+  line-height: 1.6em;
+  text-decoration: none;
+}
+
+.dropbtn {
+    background-color: #F90;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+   /* border: #F79510 2px solid;*/
+    cursor: pointer;
+	width:100%;
+	margin-bottom:10px;
+	text-align: center;
+}
+.dropdown {
+    position: relative;
+   display: inline-block;
+	text-align:center;
+	width:100%;
+}
+
+a{
+	text-decoration:none;
+}
+
+#control-bar{
+	margin-top: -10px;
+	padding: 0px 0px;
+}
+
+.menu-divider {
+	color:#F93;
+	background-color:#F93;
+}
+
+#control-bar{
+	background-color:#F93;
+	color:#FFF;
+	width:100%;
+	}
+	
+	
+	.h3{
+		background-color: #000;
+		text-align:right;
+	padding-top: 66px;
+		margin-top: -65px;
+		color:#FFF;
+		position:relative;
+		opacity: 0.4;
+	}
+	
+#visa-panel{
+	background-color:#fff;
+	color:#000;
+}
+
+.grey-header {
+  padding: 10px 20px;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  background-color: #fafafa;
+}
+.grey-heading-title {
+  font-size: 16px;
+  color:#F00;
+}
+
+.separator-fields {
+  height: 8px;
+}
+
+.description-new {
+  padding-right: 0px;
+  padding-left: 0px;
+  font-size: 11px;
+  text-align:center;
+}
+.description-new2 {
+  padding-right: 0px;
+  padding-left: 0px;
+  font-size: 11px;
+  text-align:center;
+  font-weight:700;
+  
+}
+.separator-button {
+  height: 21px;
+}
+
+#mer-caption{
+	padding-top:-30px;
+	vertical-align:central;
+	color:#fff;
+}
+ 
+#header-logo{
+	vertical-align:central;
+	width: 35%;
+	text-align:center;
+	margin-left: 30%;
+
+}
+
+.catname{
+	position:relative;
+	margin-top:-50px;
+	color:#fff;
+	font-size:14px;
+	text-align:right;
+	font-weight:bold;
+	padding-right:10px;
+}
+
+#menu-banner{
+	width: 100%;
+}
+
+#footer{
+	border-top: #F93 1px solid;
+	border-bottom: #F93 1px solid;
+	text-align:center;
+}
+
+.list-mer-image{
+	border: #F93 1px solid;
+	width: 100%;
+	max-height:200px;
+}
+
+.promo-offer, .mer-offer{
+	margin-top:10px;
+	border: #F93 1px solid;
+	text-align:left;
+	margin-bottom:10px;
+}
+
+.offer-border, #offer-border{
+	border-color:#F93;
+}
+
+.promo-image, .mer-image{
+	width: 100%;
+	max-width:100%;
+	/*max-height: 23.33%;*/
+}
+
+.list-mer-image img{
+	max-height:200px;
+	width:100%;
+
+}
+
+.list-mer-info{
+	margin:10px 0px;
+
+	
+}
+
+.desc{
+	text-align:left;
+	font-style:italic;
+	font-size:10px;
+}
+
+.promo-mer-info, .mer-info{
+	margin:10px 0px;
+	text-align:left;
+	padding:0px 10px;
+}
+.promo-store{
+	padding-top:3px;
+	font-size: 14px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+.mer-store{
+	padding-top:3px;
+	font-family:Tahoma, Geneva, sans-serif;
+	}
+.promo-info{
+	font-family:"Comic Sans MS", cursive;
+	font-style:italic;
+	font-weight:bold;
+	font-size:20px;
+	color:#F00;
+}
+
+.promo-address{
+	margin: 0px;
+	padding-top:0px;
+	font-size: 12px;
+}
+
+.mer-address{
+	margin: 0px;
+	padding-top:0px;
+	font-size: 12px;
+}
+
+.offer-listings{
+	font-size:9px;
+}
+	
+.list-mer-address{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:9px;
+	font-style:italic;
+}
+
+
+
+.list-mer-name{
+	font-size:12px;
+	font-weight:bold;
+}
+
+.list-mer-expiry{
+	font-style:italic;
+	font-size: 12px;
+	color:#666;
+}
+
+
+.promo-offer-listing i
+{
+	padding-left:5px;
+}
+
+
+.promo-offer-listing h4
+{
+	color:#000;
+	
+	}
+
+.list-mer-offer-listing
+{
+	padding-bottom:10px;
+}
+
+#footer-sm{
+	width: 20%;
+}
+
+.ui-grid-a{
+	/*border-spacing:5px;*/
+	width:100%;
+}
+.slider{
+	border: #F93 1px solid;
+	margin-bottom:10px;
+	max-width: 30%;
+	max-height:13%;
+	}
+	
+	.slider-img {
+		max-height:30%;
+		width:100%;
+	}
+
+.ui-block-a, .ui-block-b{
+	margin-top:5px;
+}
+
+.mer-cateory{
+	border: #F93 1px solid;
+	margin-right:5px;
+	margin-bottom: 3px;
+	
+}
+
+.mer-cateory img{
+	width:100%;
+}
+
+#content{
+	text-align:center;
+}
+
+.slider-wrapper{
+	max-width:100%;
+	margin:0px 0px;
+	padding: 0px 0px;
+	max-height:13%;
+}
+
+@media only screen and (max-device-width: 800px), screen and (max-width: 800px) {
+  .demo_wrapper {
+    width: 100%;
+  }  
+}
+.demo_block {
+	width: 100%;
+}

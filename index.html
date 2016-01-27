@@ -1,0 +1,164 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visa</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+ <link rel="stylesheet" href="mobile/jquery.mobile-1.4.5.min.css" />
+<script src="mobile/jquery-1.11.1.min.js"></script>
+<script src="mobile/jquery.mobile-1.4.5.min.js"></script>
+<!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
+
+<script>
+$(document).ready(function(){
+	$('#content').load('newhome.html');	
+	
+	$('#content').bind("swiperight",'#content', function(){
+		$('#visa-panel').panel("open");
+	}); 
+	$('#content').bind("swipeleft", function(){
+		$('#visa-panel').panel("close");
+	});
+	
+	$('#visa-panel').on('click', '.promo', function() {
+		$('#content').load('http://premiumincentives.biz/mobi/visaloyalty1/promo.php');
+		//return false;
+	});
+	
+	$('#visa-panel').on('click', '.home1', function() {
+		$('#content').load('http://premiumincentives.biz/mobi/visaloyalty1/newhome.html');
+		//return false;
+	});
+
+$('#visa-panel').on('click', '.faq', function() {
+		$('#content').load('faq.html');
+		//return false;
+	});
+
+	
+	$('#visa-panel').on('click', '.side-link', function() {
+		id = $(this).attr('id');
+		//alert(id);
+		
+		$.ajax({
+									type: "GET",
+									url: "http://premiumincentives.biz/mobi/visaloyalty1/merchantoffers.php",
+									data: {id:id},
+																		
+									success: function(msg){
+									if (msg.success == false) {
+									$("#warn").html("There was an error submitting the form. Please try again.");
+									} else {
+									$('#content').html(msg);	
+										
+									}
+													
+									}
+									
+								});
+		//return false;
+		
+		
+	});
+			
+	$('#content').on('click', '.swiper-wrapper', function() {
+		$('#content').load('http://premiumincentives.biz/mobi/visaloyalty1/promo.php');
+	
+	});
+			
+$('#content').on('click', '.store', function() {
+		id = $(this).attr('id');
+		//alert(id);
+		
+		$.ajax({
+									type: "GET",
+									url: "http://premiumincentives.biz/mobi/visaloyalty1/merchantoffers.php",
+									data: {id:id},
+																		
+									success: function(msg){
+									if (msg.success == false) {
+									$("#warn").html("There was an error submitting the form. Please try again.");
+									} else {
+									$('#content').html(msg);	
+										
+									}
+													
+									}
+									
+								});
+		
+		
+	});
+	
+	$('#content').on('change', '.dropbtn', function() {
+	
+	var stateid = $('#stateid').val();
+	var hmercatid = $('#hmercatid').val();
+	var showform = "noform";
+	//alert(hmercatid);
+		
+	//alert("move");
+	$.ajax({
+									type: "GET",
+									url: "http://premiumincentives.biz/mobi/visaloyalty1/merchantoffers.php",
+									data: {stateid:stateid, hmercatid:hmercatid},
+																		
+									success: function(msg){
+									if (msg.success == false) {
+									alert("There was an error loading the page. Please try again.");
+									} else {
+									$("#content").html(msg);
+									//$("#content").html('<img src="/images/loading.gif" />').html(msg)
+									//$("#hmercatid").val(id);
+									//$("#hstoreid").val(storeid);
+								//	$("#hfromdate").val(fromdate);
+									//$("#htodate").val(todate);
+																	
+									}
+													
+									}
+									
+								});
+	return false;
+	
+});
+
+});
+    
+</script>
+ <link rel="stylesheet" href="css/visa.css" />
+</head>
+<body>
+<div data-role="page" data-theme="d">
+
+<div data-role="panel" id="visa-panel" data-position-fixed="true" data-display="overlay">
+<ul data-role="listview" data-theme="a";>
+<div><img src="images/menu-banner.jpg" id="menu-banner"/></div>
+<li class="home1">Home</li>
+<li class="promo">Promo</li>
+<li class="side-link" id="16">Shopping</li>
+<li class="side-link" id="4">Bars and Restaurants</li>
+<li class="side-link" id="17">Lifestyle</li>
+<li class="side-link" id="1">Fashion</li>
+<li class="side-link" id="12">Experience</li>
+<li class="side-link" id="3">Stay</li>
+<li data-role="list-divider" class="menu-divider"></li>
+<li class="faq">FAQ</li>
+</ul>
+</div>
+
+<div data-role="header" data-position="fixed" id="header">
+<a href="#visa-panel" style="border:hidden;"><i class="fa fa-bars fa-2x" style="color:#FFF; border:hidden;"></i></a>
+</div>
+
+<div data-role="content" id="content">
+</div>
+<div data-role="footer" id="footer">
+<img src="images/fb.png" id="footer-sm"/>
+<img src="images/twitter.png" id="footer-sm"/>
+</div>
+
+</div>
+</body>
+</html>
