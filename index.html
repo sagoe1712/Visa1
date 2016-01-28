@@ -27,7 +27,7 @@ $(document).ready(function(){
 	});
 	
 	$('#visa-panel').on('click', '.home1', function() {
-		$('#content').load('http://premiumincentives.biz/mobi/visaloyalty1/newhome.html');
+		$('#content').load('newhome.html');
 		//return false;
 	});
 
@@ -48,7 +48,7 @@ $('#visa-panel').on('click', '.faq', function() {
 																		
 									success: function(msg){
 									if (msg.success == false) {
-									$("#warn").html("There was an error submitting the form. Please try again.");
+									alert("There was an error submitting the form. Please try again.");
 									} else {
 									$('#content').html(msg);	
 										
@@ -78,7 +78,7 @@ $('#content').on('click', '.store', function() {
 																		
 									success: function(msg){
 									if (msg.success == false) {
-									$("#warn").html("There was an error submitting the form. Please try again.");
+									alert("There was an error submitting the form. Please try again.");
 									} else {
 									$('#content').html(msg);	
 										
@@ -133,16 +133,18 @@ $('#content').on('click', '.store', function() {
 <div data-role="page" data-theme="d">
 
 <div data-role="panel" id="visa-panel" data-position-fixed="true" data-display="overlay">
-<ul data-role="listview" data-theme="a";>
+<ul data-role="listview" data-theme="a">
 <div><img src="images/menu-banner.jpg" id="menu-banner"/></div>
 <li class="home1">Home</li>
 <li class="promo">Promo</li>
-<li class="side-link" id="16">Shopping</li>
+<li class="side-link" id="16">Retail</li>
+<li class="side-link" id="5">Electronics</li>
 <li class="side-link" id="4">Bars and Restaurants</li>
-<li class="side-link" id="17">Lifestyle</li>
+<li class="side-link" id="12">Lifestyle</li>
 <li class="side-link" id="1">Fashion</li>
-<li class="side-link" id="12">Experience</li>
-<li class="side-link" id="3">Stay</li>
+<li class="side-link" id="12">Beauty, Gym &amp; Spa</li>
+<li class="side-link" id="3">Healthcare</li>
+<li class="side-link" id="17">Others</li>
 <li data-role="list-divider" class="menu-divider"></li>
 <li class="faq">FAQ</li>
 </ul>
