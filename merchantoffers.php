@@ -4,7 +4,7 @@
 
 <?php
 //include("checklogin.php");
-require_once("http://premiumincentives.biz/mobi/visaloyalty/Connections/dms.php");
+require_once("http://premiumincentives.biz/mobi/visaloyalty1/Connections/dms.php");
 
 //$id = $_GET['id'];
 //$mercatid = $id;

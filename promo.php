@@ -1,6 +1,6 @@
 <?php
 //include("checklogin.php");
-require_once("http://premiumincentives.biz/mobi/visaloyalty/Connections/dms.php");
+require_once("http://premiumincentives.biz/mobi/visaloyalty1/Connections/dms.php");
 
 $sql = "SELECT promo_head, image_name_page, end_date, description, store_id FROM ims_promo WHERE status = 1 AND end_date >=  CURRENT_DATE()";
 
