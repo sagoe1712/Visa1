@@ -57,13 +57,13 @@
     <gap:splash src="res/screen/ios/screen-iphone-portrait.png"    gap:platform="ios"     width="320" height="480" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios"     width="640" height="960" />
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"      gap:platform="ios"     width="768" height="1024" />
-    <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
+    <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />-->
 
-    <gap:splash src="normal.jpg"     gap:platform="ios"     width="750" height="1334" />
-    <gap:splash src="normal.jpg"     gap:platform="ios"     width="1242" height="2208" />
-    <gap:splash src="xlarge.jpg"     gap:platform="ios"     width="2208" height="1242" />
+    <gap:splash src="zlogo.png"     gap:platform="ios"     width="750" height="1334" />
+    <gap:splash src="zlogo.png"     gap:platform="ios"     width="1242" height="2208" />
+    <gap:splash src="zlogo.png"     gap:platform="ios"     width="2208" height="1242" />
 
-    <gap:splash src="large.jpg" gap:platform="winphone" /> -->
+   <!-- <gap:splash src="large.jpg" gap:platform="winphone" /> -->
 	
 	
 
