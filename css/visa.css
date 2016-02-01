@@ -226,6 +226,15 @@ a{
 .offer-listings{
 	font-size:9px;
 }
+
+.popup ul li{
+	padding:10px;
+	}
+	
+	.popup ul li i{
+		font-family:Verdana;
+		font-style:normal;
+	}
 	
 .list-mer-address{
 	font-family:Verdana, Geneva, sans-serif;
@@ -308,6 +317,23 @@ a{
 	margin:0px 0px;
 	padding: 0px 0px;
 	max-height:13%;
+}
+
+.listdisplay{
+	text-align:center;
+	background-color:#006;
+	color:#FFF;
+	height:30px;
+	padding-top:10px;
+}
+.close-btn{
+	padding: 10px;
+	margin-bottom:20px;
+	float:right;
+	}
+.popup{
+	/*border: 1px solid #FF6600;*/
+
 }
 
 @media only screen and (max-device-width: 800px), screen and (max-width: 800px) {
