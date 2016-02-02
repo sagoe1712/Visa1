@@ -44,7 +44,7 @@
     -->
 
     <!-- Define app icon for each platform. -->
-    <icon src="zlogo.png" />
+    <icon src="logo.png" />
     
 
     <!-- Define app splash screen for each platform. -->
