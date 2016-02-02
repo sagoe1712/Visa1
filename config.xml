@@ -49,19 +49,21 @@
 
     <!-- Define app splash screen for each platform. -->
 	
-    <gap:splash src="zlogo.png"  gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="zlogo.png"  gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="zlogo.png"  gap:platform="android" gap:density="hdpi" />
-    <gap:splash src="zlogo.png" gap:platform="android" gap:density="xhdpi" />
-    <!-- <gap:splash src="normal.jpg"         gap:platform="blackberry" />
+    <gap:splash src="ldpi.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="mdpi.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="hdpi.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+    <!-- <gap:splash src="normal.jpg"         gap:platform="blackberry" />-->
+	
+	
     <gap:splash src="res/screen/ios/screen-iphone-portrait.png"    gap:platform="ios"     width="320" height="480" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios"     width="640" height="960" />
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"      gap:platform="ios"     width="768" height="1024" />
-    <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />-->
+    <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
 
-    <gap:splash src="zlogo.png"     gap:platform="ios"     width="750" height="1334" />
-    <gap:splash src="zlogo.png"     gap:platform="ios"     width="1242" height="2208" />
-    <gap:splash src="zlogo.png"     gap:platform="ios"     width="2208" height="1242" />
+    <gap:splash src="res/screen/ios/1.png"     gap:platform="ios"     width="750" height="1334" />
+    <gap:splash src="res/screen/ios/2.png"     gap:platform="ios"     width="1242" height="2208" />
+    <gap:splash src="res/screen/ios/3.png"     gap:platform="ios"     width="2208" height="1242" />
 
    <!-- <gap:splash src="large.jpg" gap:platform="winphone" /> -->
 	
