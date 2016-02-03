@@ -52,16 +52,20 @@ $(document).ready(function(){
 	});
 	
 	$('#visa-panel').on('click', '.promo', function() {
+		$('#content').html('<img src="/images/loading.gif" />');
 		$('#content').load('http://premiumincentives.biz/mobi/visaloyalty1/promo.php');
+		$('#visa-panel').panel("close");
 		return false;
 	});
 	
 	$('#visa-panel').on('click', '.home1', function() {
+		$('#content').html('<img src="/images/loading.gif" />');
 		$('#content').load('newhome.html');
 		return false;
 	});
 
 $('#visa-panel').on('click', '.faq', function() {
+	$('#content').html('<img src="/images/loading.gif" />');
 		$('#content').load('faq.html');
 		return false;
 	});
@@ -70,7 +74,7 @@ $('#visa-panel').on('click', '.faq', function() {
 	$('#visa-panel').on('click', '.side-link', function() {
 		id = $(this).attr('id');
 		//alert(id);
-		
+		$('#content').html('<img src="/images/loading.gif" />');
 		$.ajax({
 									type: "GET",
 									url: "http://premiumincentives.biz/mobi/visaloyalty1/merchantoffers.php",
@@ -80,7 +84,7 @@ $('#visa-panel').on('click', '.faq', function() {
 									if (msg.success == false) {
 									alert("There was an error submitting the form. Please try again.");
 									} else {
-									$('#content').html('<img src="/images/loading.gif" />').html(msg);	
+									$('#content').html(msg);	
 										
 									}
 													
@@ -93,6 +97,7 @@ $('#visa-panel').on('click', '.faq', function() {
 	});
 			
 	$('#content').on('click', '.swiper-wrapper', function() {
+		$('#content').html('<img src="/images/loading.gif" />');
 		$('#content').load('http://premiumincentives.biz/mobi/visaloyalty1/promo.php');
 	
 	});
@@ -100,7 +105,7 @@ $('#visa-panel').on('click', '.faq', function() {
 $('#content').on('click', '.store', function() {
 		id = $(this).attr('id');
 		//alert(id);
-		
+		$('#content').html('<img src="/images/loading.gif" />');
 		$.ajax({
 									type: "GET",
 									url: "http://premiumincentives.biz/mobi/visaloyalty1/merchantoffers.php",
@@ -127,7 +132,7 @@ $('#content').on('click', '.store', function() {
 	var hmercatid = $('#hmercatid').val();
 	var showform = "noform";
 	//alert(hmercatid);
-		
+		$('#content').html('<img src="/images/loading.gif" />');
 	//alert("move");
 	$.ajax({
 									type: "GET",
