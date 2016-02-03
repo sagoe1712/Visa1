@@ -31,6 +31,17 @@ function onBackKeyDown() {
 
 <script>
 $(document).ready(function(){
+	
+		function onLoad()
+            {
+                  document.addEventListener("deviceready", onDeviceReady, true);
+                   
+            }
+
+    
+     document.addEventListener("offline", function(){ alert("You're offline") }, false);
+
+
 	$('#content').load('newhome.html');	
 	
 	$('#content').bind("swiperight",'#content', function(){
@@ -69,7 +80,7 @@ $('#visa-panel').on('click', '.faq', function() {
 									if (msg.success == false) {
 									alert("There was an error submitting the form. Please try again.");
 									} else {
-									$('#content').html(msg);	
+									$('#content').html('<img src="/images/loading.gif" />').html(msg);	
 										
 									}
 													
@@ -99,7 +110,7 @@ $('#content').on('click', '.store', function() {
 									if (msg.success == false) {
 									alert("There was an error submitting the form. Please try again.");
 									} else {
-									$('#content').html(msg);	
+									$('#content').html('<img src="/images/loading.gif" />').html(msg);	
 										
 									}
 													
