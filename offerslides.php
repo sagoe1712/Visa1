@@ -11,7 +11,7 @@ if ($count <1) {
 $result = "";
 $result .= "<div class=\"swiper-wrapper\">";
 $result .= "<div class=\"swiper-slide\">";
-$result.= "<span>Welcome To Our Loyalty Program</span>";
+$result.="<img class=\"slider-img\" src=\"http://premiumincentives.biz/visang/images/photo/default.png\"/><br/>";
 $result.="<a href=\"merchant.html\" class=\"swiper_read_more\">Click to visit merchant partners</a>";
 $result.="</div>";
 
