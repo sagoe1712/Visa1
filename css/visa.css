@@ -310,6 +310,11 @@ a{
 	max-height:200px;
 }
 
+.mer-display{
+	width:100%;
+	max-height:200px;
+	}
+
 #content{
 	text-align:center;
 }
