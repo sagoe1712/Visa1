@@ -235,7 +235,8 @@ a{
 }
 
 .popup ul li{
-	padding:10px;
+	padding-top:0px;
+	padding-bottom:10px;
 	}
 	
 	.popup ul li i{
