@@ -358,9 +358,16 @@ a{
 	}
 .popup{
 	/*border: 1px solid #FF6600;*/
+	text-align:left;
+	float:left;
 
 }
+.popup ul{
+	/*border: 1px solid #FF6600;*/
+	text-align:left;
+	float:left;
 
+}
 @media only screen and (max-device-width: 800px), screen and (max-width: 800px) {
   .demo_wrapper {
     width: 100%;
