@@ -342,6 +342,15 @@ a{
 	height:30px;
 	padding-top:10px;
 }
+
+.listdisplayclose{
+	text-align:center;
+	background-color:#006;
+	color:#FFF;
+	height:30px;
+	padding-top:10px;
+}
+
 .close-btn{
 	padding: 10px;
 	margin-bottom:20px;
